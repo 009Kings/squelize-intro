@@ -3,3 +3,5 @@ sequelize model:create --name user --attributes name:string,age:integer,email:st
 sequelize db:migrate
 
 sequelize db:migrate:undo
+
+sequelize model:create --name pet --attributes name:string,species:string,description:text,userId:integer
