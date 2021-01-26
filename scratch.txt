@@ -5,3 +5,7 @@ sequelize db:migrate
 sequelize db:migrate:undo
 
 sequelize model:create --name pet --attributes name:string,species:string,description:text,userId:integer
+
+sequelize model:create --name toy --attributes type:string,color:string
+
+sequelize model:create --name petToys --attributes petId:integer,toyId:integer
